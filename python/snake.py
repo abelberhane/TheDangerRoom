@@ -1,3 +1,4 @@
+# This exercise was found here: https://www.youtube.com/watch?v=rbasThWVb-c&ab_channel=EngineerMan
 # Needed to randomize food locations
 import random
 # Needed to access the screen
