@@ -29,7 +29,7 @@ snake = [
 # Adding the food to the center of the screen
 food = [sh/2, sw/2]
 # Selecting Pi as the food
-w.addch(food[0], food[1], curses.ACS_PI)
+w.addch(int(food[0]), int(food[1]), curses.ACS_PI)
 
 # Direction the snake moves when the game starts
 key = curses.KEY_RIGHT
@@ -39,14 +39,14 @@ while True:
     # Check for what the next key is
     next_key = w.getch()
     # set the next key based on what was entered
-    key = key if next_key == 01 else next_key
+    key = key if next_key == -1 else next_key
 
     # Check if the person has lost the game
     # If the snake touches the top/height of the screen, left/right of the screen or if it touches itself
     if snake[0][0] in [0, sh] or snake[0,1] in [0, sw] or snake[0] in snake[1:]:
     # Kill the window and quit the game
-    curses.endwin()
-    quit()
+        curses.endwin()
+        quit()
 
     # Determine what the new head of the snake will be
     new_head = [snake[0][0], snake[0,1]]
