@@ -43,13 +43,13 @@ while True:
 
     # Check if the person has lost the game
     # If the snake touches the top/height of the screen, left/right of the screen or if it touches itself
-    if snake[0][0] in [0, sh] or snake[0,1] in [0, sw] or snake[0] in snake[1:]:
+    if snake[0][0] in [0, sh] or snake[0][1] in [0, sw] or snake[0] in snake[1:]:
     # Kill the window and quit the game
         curses.endwin()
         quit()
 
     # Determine what the new head of the snake will be
-    new_head = [snake[0][0], snake[0,1]]
+    new_head = [snake[0][0], snake[0][1]]
 
     # Translates the key movements into growing the snake
     if key ==curses.KEY_DOWN:
@@ -84,6 +84,6 @@ while True:
         # Tail of the snake will come off
         tail = snake.pop()
         # Add a space in place of where the old tail was
-        w.addch(tail[0]. tail[1], ' ')
+        w.addch(int(tail[0]), int(tail[1]), ' ')
     # Add the head of the snake to the screen
-    w.addch(snake[0][0], snake[0][1], curses.ACS_CKBOARD)
+    w.addch(int(snake[0][0]), int(snake[0][1]), curses.ACS_CKBOARD)
