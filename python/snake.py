@@ -73,7 +73,7 @@ while True:
             # Create the new food and set its location randomly
             nf = [
                 random.randint(1, sh-1),
-                    random.randint(1, sw-1)
+                random.randint(1, sw-1)
             ]
             # Checks to see if the new food has been added
             food = nf if nf not in snake else None
