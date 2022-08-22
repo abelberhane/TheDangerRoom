@@ -1,5 +1,6 @@
 # Have fun with Go Lang
-I will be using this directory to flex and practice various Go scripts and concepts. 
+![alt text](https://github.com/abelberhane/TheDangerRoom/blob/main/go/images/go-lang.gif?raw=true)
+<br> I will be using this directory to flex and practice various Go scripts and concepts. 
 
 ### Goals
 1) Feel comfortable using Go for scripting needs
