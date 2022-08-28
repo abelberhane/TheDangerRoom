@@ -15,6 +15,7 @@ This repository will contain numerous workflows, ideas and prototypes. The Dange
 
 ## Completed Prototypes
 1) Snake Game - Written in Python
+2) Reaction Based FPS Trainer - Written in Ruby
 
 ----------------------
 
