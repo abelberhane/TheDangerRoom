@@ -1,0 +1,50 @@
+name: Create Monthly Issues for Reminders and Projects
+
+on:
+  # Workflow will run on every month on the 1st at 1:00AM UTC
+  schedule:
+      - cron: '0 1 1 * *'
+  # Adding workflow dispatch means it can also be run manually
+  workflow_dispatch:
+# Contents needs to be set to read in order to view the repo. Issues need to have write so they can create them.
+permissions:
+  contents: read
+  issues: write
+jobs:
+  # Setting the name of the of job
+  create-monthly-issue:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    # This is where we break down the steps needed to create a monthly issue
+    steps:
+    # First we checkout our current repo, TheDangerRoom
+    - uses: actions/checkout@v3
+    # This is where I set the Date as a variable to be used in the title of the created Issue below
+    - name: get date
+      run: |
+        echo "MEETINGDATE=$(date +"%B %d, %Y")" >> $GITHUB_ENV
+    # Here we grab our team that is later used as assignees in the issue that is created
+    # - uses: garnertb/get-team-members@v1
+    # abelb/get-team-members is not setup yet
+    - uses: abelb/get-team-members@v1
+      id: assignees
+      with:
+        team_slug: x-men
+        token: ${{ secrets.GH_PLANNING_PAT }}
+    # Create the issue
+    - name: Create new issue
+      uses: imjohnbo/issue-bot@v3
+      with:
+        # Assigns this new Issue to the following users
+        assignees: ${{ steps.assignees.outputs.members ||  env.ASSIGNEES }}
+        # Sets the label of the new Issue
+        labels: "Monthly Planning"
+        # Title of the new Issue
+        title: Task Reminder - ${{ env.MEETINGDATE }}
+        # Body of the new Issue
+        body: |-
+          :wave: Hi, it is time for your favorite task, ____!
+        # Links previous issues as comments to the new issue
+        linked-comments: true
+        # Token below that has write and read permissions on the repo
+        token: ${{ secrets.PAT_YOU_MAKE }}
