@@ -1,5 +1,5 @@
 # Ruby based FPS Reaction Trainer
-![](https://github.com/abelberhane/TheDangerRoom/blob/v2-ruby/images/2022-09-02%2010-55-40.gif?raw=true)
+![](https://github.com/abelberhane/TheDangerRoom/blob/main/images/2022-09-02%2010-55-40.gif?raw=true)
 Increase your hand eye coordination with this simple ruby based FPS shooting reaction trainer. This program is very similar to the Steam game, Aim Hero.
 
 
