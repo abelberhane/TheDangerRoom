@@ -63,7 +63,7 @@ While I did not create the logic for this game, I am breaking every line down to
 - [ ] Add realistic background
 - [ ] Select your target item or color
 - [X] Flesh out readme and documentation
-- [ ] Add easy to view gif of working program
+- [X] Add easy to view gif of working program
 - [ ] Possibly a high score
 
 ----------------------
