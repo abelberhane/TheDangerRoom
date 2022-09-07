@@ -59,12 +59,12 @@ While I did not create the logic for this game, I am breaking every line down to
 ----------------------
 
 # To Do List
-- [ ] Add/Improve Comments
 - [ ] Add realistic background
 - [ ] Select your target item or color
+- [ ] Possibly a high scorev
+- [X] Add/Improve Comments
 - [X] Flesh out readme and documentation
 - [X] Add easy to view gif of working program
-- [ ] Possibly a high score
 
 ----------------------
 
