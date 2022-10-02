@@ -57,7 +57,7 @@ This repository will contain numerous workflows, ideas and prototypes. The Dange
 ----------------------
 
 # To Do List
-- [ ] Implement Super Linter
+- [X] Implement Super Linter
 - [ ] Create Issue Template for Suggestions
 - [ ] Add CODEOWNERS file
 - [ ] Create chart for language progress
