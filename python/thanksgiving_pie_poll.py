@@ -17,26 +17,31 @@ guest_count=int(input("How many people are coming to Thanksgiving dinner: "))
 # Continually ask the user for the number of votes for each pie type until a viable value is found
 apple_pie_count=int(input("How many people are voting for Apple Pie: "))
   # This is where I verify if all guests have voted
+  # If the number of people who voted for apple pie is the same as the total number of guests, set the final pie count equal to apple pie votes
   if apple_pie_count==guest_count:
     final_pie_count=apple_pie_count
   else:
     apple_pie_count=current_pie_count
 pumpkin_pie_count=int(input("How many people are voting for Pumpkin Pie: "))
+  # If the number of people who voted for pumpkin and apple pie is the same as the total number of guests, set the final pie count equal to sum of both pie votes
   if apple_pie_count + pumpkin_pie_count==guest_count:
     final_pie_count=(apple_pie_count + pumpkin_pie_count)
   else:
     (apple_pie_count + pumpkin_pie_count)=current_pie_count
 pecan_pie_count=int(input("How many people are voting for Pecan Pie: "))
+  # Same logic as above
   if pecan_pie_count + apple+pie_count + pumpkin_pie_count==guest_count:
       final_pie_count=(apple_pie_count + pumpkin_pie_count + pecan_pie_count)
   else:
     (apple_pie_count + pumpkin_pie_count + pecan_pie_count)=current_pie_count
 key_lime_pie_count=int(input("How many people are voting for Key Lime Pie: "))
+  # Same logic as above
   if key_lime_pie + pecan_pie_count + apple+pie_count + pumpkin_pie_count==guest_count:
       final_pie_count=(key_lime_pie + pecan_pie_count + apple+pie_count + pumpkin_pie_count)
   else:
     (key_lime_pie + pecan_pie_count + apple+pie_count + pumpkin_pie_count)=current_pie_count
 chocolate_pie_count=int(input("How many people are voting for Chocolate Pie: "))
+  # Same logic as above
   if chocolate_pie_count + key_lime_pie_count + pecan_pie_count + apple+pie_count + pumpkin_pie_count==guest_count:
       final_pie_count=(chocolate_pie_count + key_lime_pie + pecan_pie_count + apple+pie_count + pumpkin_pie_count)
   else:
