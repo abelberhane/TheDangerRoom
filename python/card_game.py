@@ -1,4 +1,5 @@
 # https://github.com/SmallLion/Python-Projects/blob/main/cardgame.py
+# Deal a card between 2 players and determine whose card is higher
 from random import shuffle
 
 
