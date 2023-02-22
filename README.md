@@ -5,7 +5,7 @@ This repository will contain numerous workflows, ideas and prototypes. The Dange
 
 --------------------
 
-## Table of Contents
+## Table of Contents 
 
 - [Danger Room](#danger-room)
   - [Table of Contents](#table-of-contents)
