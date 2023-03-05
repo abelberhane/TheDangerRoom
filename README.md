@@ -72,7 +72,7 @@ While there are no guarantees, new ideas and suggestions are always helpful and 
 ----------------------
 
 ## How to Contribute
-If you would like to help contribute to this repository or see a fix that you would like to implement, please see [CONTRIBUTING](https://github.com/abelberhane/TheDangerRoom/blob/Codeofconduct/CODE_OF_CONDUCT.md). Teamwork makes the dreamwork and I am always open to any co-pairing ideas, sessions or reviewing pull requests.
+If you would like to help contribute to this repository or see a fix that you would like to implement, please see [CONTRIBUTING](https://github.com/abelberhane/TheDangerRoom/blob/main/CODE_OF_CONDUCT.md). Teamwork makes the dreamwork and I am always open to any co-pairing ideas, sessions or reviewing pull requests.
 <p align="center">
   <img width="475" height="225" src="https://www.significant72.com/uploads/4/4/1/1/44110523/img-4006_orig.gif">
 </p>
