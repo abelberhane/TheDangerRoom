@@ -11,7 +11,7 @@ def wrap(s, width = 78)
 end
 
 def movie
-  # This is a live API key, don't absue it
+  # This is a live API key from the original script. Don't abuse it but need to add my own.  
   api_key = ENV['OMDBAPI_API_KEY'] || '946f500a'
 
   movie_name = ARGV
